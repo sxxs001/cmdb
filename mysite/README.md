@@ -1,5 +1,5 @@
 
-Installation
+[Installation]
         hosts配置 127.0.0.1 cmdb.ops.com
         克隆至家目录
 
@@ -18,22 +18,22 @@ Installation
 
 
 
-Documentation
+[Documentation]
 	[接口]
 		http://cmdb.ops.com/api/
 	
 	
 			
-Building the Docs
+[Building the Docs]
 
 	
-Contributing
+[Contributing]
 	Pillow
 	django-macaddress
 	django-mptt
 
 
-Change Log
+[Change Log]
 	v20161214
 		改造产品线/产品 数据形态为 树状数据结构【django-mptt】
 	v20161213
