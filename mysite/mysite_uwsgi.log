@@ -7267,3 +7267,57 @@ Not Found: /favicon.ico
 {address space usage: 2575732736 bytes/2456MB} {rss usage: 47636480 bytes/45MB} [pid: 1900|app: 0|req: 1/8] 127.0.0.1 () {44 vars in 861 bytes} [Mon Dec 19 21:14:46 2016] GET / => generated 423437 bytes in 760 msecs (HTTP/1.1 200) 4 headers in 256 bytes (36 switches on core 0)
 {address space usage: 2577129472 bytes/2457MB} {rss usage: 26546176 bytes/25MB} [pid: 1901|app: 0|req: 3/9] 127.0.0.1 () {44 vars in 861 bytes} [Tue Dec 20 16:55:06 2016] GET / => generated 419124 bytes in 328 msecs (HTTP/1.1 200) 4 headers in 256 bytes (45 switches on core 0)
 {address space usage: 2577637376 bytes/2458MB} {rss usage: 26296320 bytes/25MB} [pid: 1897|app: 0|req: 4/10] 127.0.0.1 () {44 vars in 861 bytes} [Tue Dec 20 16:59:50 2016] GET / => generated 419123 bytes in 282 msecs (HTTP/1.1 200) 4 headers in 256 bytes (53 switches on core 0)
+Tue Dec 20 18:34:37 2016 - *** /Users/kk/PycharmProjects/mysite/mysite_uwsgi.pid has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1897)...
+Gracefully killing worker 2 (pid: 1898)...
+Gracefully killing worker 3 (pid: 1899)...
+Gracefully killing worker 5 (pid: 1901)...
+Gracefully killing worker 4 (pid: 1900)...
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+[deadlock-detector] pid 1899 was holding lock thunder (0x100efa000)
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/kk/PycharmProjects/myvirtual_env
+closing all non-uwsgi socket fds > 2 (max_fd = 4864)...
+found fd 3 mapped to socket 0 (/Users/kk/PycharmProjects/mysite/mysite_uwsgi.sock)
+running /Users/kk/PycharmProjects/myvirtual_env/bin/uwsgi
+[uWSGI] getting INI configuration from /Users/kk/PycharmProjects/mysite/mysite_uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Tue Dec 20 18:34:38 2016] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.31) on 10 December 2016 14:00:19
+os: Darwin-15.6.0 Darwin Kernel Version 15.6.0: Wed Nov  2 20:30:56 PDT 2016; root:xnu-3248.60.11.1.2~2/RELEASE_X86_64
+nodename: huangkehangdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit enabled
+detected number of CPU cores: 4
+current working directory: /Users/kk/PycharmProjects/myvirtual_env
+detected binary path: /Users/kk/PycharmProjects/myvirtual_env/bin/uwsgi
+chdir() to /Users/kk/PycharmProjects/mysite/
+your processes number limit is 709
+limiting address space of processes...
+your process address space limit is 6341787648 bytes (6048 MB)
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 4864
+lock engine: OSX spinlocks
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /Users/kk/PycharmProjects/mysite/mysite_uwsgi.sock fd 3
+Python version: 2.7.10 (default, Oct 23 2015, 19:19:21)  [GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)]
+Python main interpreter initialized at 0x7f8d90e00e90
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 436512 bytes (426 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f8d90e00e90 pid: 1892 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1892)
+spawned uWSGI worker 1 (pid: 42715, cores: 1)
+spawned uWSGI worker 2 (pid: 42716, cores: 1)
+spawned uWSGI worker 3 (pid: 42717, cores: 1)
+spawned uWSGI worker 4 (pid: 42718, cores: 1)
+spawned uWSGI worker 5 (pid: 42719, cores: 1)
